@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number gussing Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+</head>
+<body class="flex items-center justify-center bg-gray-100">
+    
+    <div class="p-8 mt-8 bg-[radial-gradient(circle_at_center,_#73b0e6_50%,_#054b87_100%)] text-center rounded-2xl ">
+        <div class="backdrop-blur-lg bg-white/50 p-5 rounded-2xl">
+            <h1 class="text-black text-[50px] " style="font-family: 'Montserrat', sans-serif;">Number Guessing Game</h1>
+        </div>
+        <p class="text-[30px] font-normal"style="font-family: 'Montserrat', sans-serif;">Guess a number between </p>
+        <p class="text-[30px] font-bold text-white">0  - 10</p>
+        <div class="border-2 w-[500px] mx-auto rounded-lg">
+            <form class=" items-center gap-2 p-5">
+                <label for="input" class="text-[30px] font-medium"style="font-family: 'Bangers', cursive;">Enter Number </label>
+                <br>
+                <input type="number" id="input" min="0" max="10" autocomplete="off" required class="w-1/2 h-10 rounded mt-2 text-[2em]" >
+            </form>
+            <div class="flex justify-center gap-4 mt-4 p-4 mb-4">
+                <button id="submit" class="bg-black text-white p-2 rounded-xl font-[Poppins] font-semibold " >Submit</button><br>
+                <button id="restart" class="bg-black text-white p-2 rounded-xl font-[Poppins] font-semibold " >Restart</button>
+            </div>
+        </div>
+        <p id="atempt" class="text-[1.5em] mt-4" style="font-family: 'Roboto Slab', serif;">Attempts:<span id="attemptspan" class="text-1.5em" style="font-family: 'Roboto Slab', serif;"></span></p>
+        <p id="result" class="mt-10 text-[2em]" style="font-family: 'Luckiest Guy', cursive;"></p>
+        <p id="restt" class="text-[30px] mt2" style="font-family: 'Roboto Slab', serif;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
